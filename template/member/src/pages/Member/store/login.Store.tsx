@@ -1,6 +1,7 @@
 // 登录模块
 import { makeAutoObservable } from "mobx"
-import { http } from '../../../utils'
+import { http,setToken, getToken, removeToken} from '../../../utils'
+
 
 class LoginStore {
   token = ''
@@ -8,10 +9,10 @@ class LoginStore {
     makeAutoObservable(this)
   }
   // 登录
-  login = async ({ mobile, code }) => {
+  login = async ({ username, password }) => {
     const res = await http.post('http://geek.itheima.net/v1_0/authorizations', {
-      mobile,
-      code
+      username,
+      password
     })
     this.token = res.data.token
   }

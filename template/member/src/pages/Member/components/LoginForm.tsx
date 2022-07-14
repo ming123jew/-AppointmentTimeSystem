@@ -6,14 +6,17 @@ import {useNavigate} from "react-router-dom"
 import { useStore } from '../store/'
 
 const LoginForm = ()=>{
+
   const navigate = useNavigate()
   const { loginStore } = useStore()
+
   const onFinish = async (values) => {
-    const {mobile, code} = values
+    const {username, password} = values
     console.log('Received values of form: ', values);
     try {
-      await loginStore.login({ mobile, code })
+      await loginStore.login({ username, password })
       navigate('/')
+      message.success("登录成功")
     } catch (err) {
       message.error( '登录失败')
     }
@@ -61,7 +64,7 @@ const LoginForm = ()=>{
           <Checkbox>Remember me</Checkbox>
         </Form.Item>
 
-        <a className="login-form-forgot" href="">
+        <a className="login-form-forgot" href="/forgot">
           Forgot password
         </a>
       </Form.Item>
@@ -70,7 +73,7 @@ const LoginForm = ()=>{
         <Button type="primary" htmlType="submit" className="login-form-button">
           Log in
         </Button>
-        Or <a href="">register now!</a>
+        Or <a href="/register">register now!</a>
       </Form.Item>
     </Form>
     </div>
