@@ -41,9 +41,19 @@ export const routers: RouteObject[] = [
     children: [
       {
         index: true,
-        element: lazyLoad(<Member />)
-      }
+        element: lazyLoad(<Member Type="index" />)
+      },
     ]
+  },
+
+  {
+    path: '/member/login',
+    element: lazyLoad(<Member Type="login" />),
+    
   }
+
+
+
+
 
 ]
