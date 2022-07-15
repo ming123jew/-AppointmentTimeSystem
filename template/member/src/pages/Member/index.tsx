@@ -7,19 +7,25 @@ class Member extends React.Component {
 
   constructor(props){
     super(props);
-    console.log(props)
   }
 
   render () {
-    if(this.props.Type=="login"){
-      return <LoginForm />
-    }else{
-      return (
-        <div className="">
-          Member Index
-        </div>
-      )
+
+    switch (this.props.Type){
+      case "login":
+        return <LoginForm />;     
+         
+      case "member":
+        break;
+
+      default:
+        return (
+          <div className="">
+            Member Index
+          </div>
+        )
     }
+
 
   }
 }

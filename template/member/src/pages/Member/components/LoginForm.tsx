@@ -3,7 +3,7 @@ import 'antd/dist/antd.css';
 import { LockOutlined, UserOutlined } from '@ant-design/icons';
 import { Button, Checkbox, Form, Input, message } from 'antd';
 import {useNavigate} from "react-router-dom"
-import { useStore } from '../store/'
+import { useStore } from '@/pages/Member/store/'
 
 const LoginForm = ()=>{
 
@@ -11,14 +11,16 @@ const LoginForm = ()=>{
   const { loginStore } = useStore()
 
   const onFinish = async (values) => {
+
     const {username, password} = values
     console.log('Received values of form: ', values);
+
     try {
       await loginStore.login({ username, password })
       navigate('/')
       message.success("登录成功")
-    } catch (err) {
-      message.error( '登录失败')
+    } catch (error) {
+      message.error( '登录失败', error)
     }
   };
 

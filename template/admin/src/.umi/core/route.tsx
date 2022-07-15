@@ -5,14 +5,14 @@ import React from 'react';
 
 export async function getRoutes() {
   return {
-    routes: {"1":{"path":"/","redirect":"/home","parentId":"ant-design-pro-layout","id":"1"},"2":{"name":"首页","path":"/home","file":"@/pages/Home/index.tsx","parentId":"ant-design-pro-layout","id":"2"},"3":{"name":"权限演示","path":"/access","file":"@/pages/Access/index.tsx","parentId":"ant-design-pro-layout","id":"3"},"4":{"name":" CRUD 示例","path":"/table","file":"@/pages/Table/index.tsx","parentId":"ant-design-pro-layout","id":"4"},"5":{"name":"会员登陆","path":"/user/login","file":"@/pages/User/login.tsx","parentId":"ant-design-pro-layout","id":"5"},"ant-design-pro-layout":{"id":"ant-design-pro-layout","path":"/","file":"@/.umi/plugin-layout/Layout.tsx","isLayout":true}},
+    routes: {"Table/components/CreateForm":{"path":"Table/components/CreateForm","id":"Table/components/CreateForm","file":"Table/components/CreateForm.tsx"},"Table/components/UpdateForm":{"path":"Table/components/UpdateForm","id":"Table/components/UpdateForm","file":"Table/components/UpdateForm.tsx"},"Access/index":{"path":"Access","id":"Access/index","file":"Access/index.tsx"},"Table/index":{"path":"Table","id":"Table/index","file":"Table/index.tsx"},"Home/index":{"path":"Home","id":"Home/index","file":"Home/index.tsx"},"User/login":{"path":"User/login","id":"User/login","file":"User/login.tsx"}},
     routeComponents: {
-'1': React.lazy(() => import( './EmptyRoute')),
-'2': React.lazy(() => import(/* webpackChunkName: "2" */'@/pages/Home/index.tsx')),
-'3': React.lazy(() => import(/* webpackChunkName: "3" */'@/pages/Access/index.tsx')),
-'4': React.lazy(() => import(/* webpackChunkName: "4" */'@/pages/Table/index.tsx')),
-'5': React.lazy(() => import(/* webpackChunkName: "5" */'@/pages/User/login.tsx')),
-'ant-design-pro-layout': React.lazy(() => import(/* webpackChunkName: "ant_design_pro_layout" */'@/.umi/plugin-layout/Layout.tsx')),
+'Table/components/CreateForm': React.lazy(() => import(/* webpackChunkName: "Table_components_CreateForm" */'../../../src/pages/Table/components/CreateForm.tsx')),
+'Table/components/UpdateForm': React.lazy(() => import(/* webpackChunkName: "Table_components_UpdateForm" */'../../../src/pages/Table/components/UpdateForm.tsx')),
+'Access/index': React.lazy(() => import(/* webpackChunkName: "Access_index" */'../../../src/pages/Access/index.tsx')),
+'Table/index': React.lazy(() => import(/* webpackChunkName: "Table_index" */'../../../src/pages/Table/index.tsx')),
+'Home/index': React.lazy(() => import(/* webpackChunkName: "Home_index" */'../../../src/pages/Home/index.tsx')),
+'User/login': React.lazy(() => import(/* webpackChunkName: "User_login" */'../../../src/pages/User/login.tsx')),
 },
   };
 }

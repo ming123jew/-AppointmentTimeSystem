@@ -1,5 +1,5 @@
 
-const Tokey_Key = ""
+const Tokey_Key = "AppointmentTimeSystemToken"
 
 const setToken = (token: string) => {
   return window.localStorage.setItem(Tokey_Key, token)

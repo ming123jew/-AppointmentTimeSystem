@@ -19,7 +19,7 @@
         "src/.umi/*"
       ],
       "@umijs/max": [
-        "/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/node_modules/umi"
+        "/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/node_modules/@umijs/max/node_modules/umi"
       ],
       "@umijs/max/typings": [
         "src/.umi/typings"
