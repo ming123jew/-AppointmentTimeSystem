@@ -1,8 +1,9 @@
-import { useState } from 'react'
-import logo from './logo.svg'
-import { useRoutes } from 'react-router-dom';
-import { routers } from './routers/index'
-import './App.css'
+import { useState } from "react";
+import logo from "./logo.svg";
+import { useRoutes } from "react-router-dom";
+import { routers } from "./routers/index";
+
+import "./App.css";
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -43,9 +44,8 @@ import './App.css'
 //   )
 // }
 
-
 function App() {
-  return useRoutes(routers)
+    return useRoutes(routers);
 }
 
-export default App
+export default App;

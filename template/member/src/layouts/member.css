@@ -1,0 +1,14 @@
+.ant-layout-header {
+    padding: 0 0 !important;
+}
+.ant-layout-footer {
+    background: #6c788c !important;
+    color: antiquewhite !important;
+}
+.member-footer .member-footer-main span {
+    margin-right: 10px;
+}
+
+.member-footer .member-footer-main span a {
+    color: antiquewhite;
+}

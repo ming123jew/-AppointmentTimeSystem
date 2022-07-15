@@ -1,11 +1,13 @@
-
-
-.login-div{
-  min-width: 150px;
-  max-width: 280px;
-  margin: 10% auto 0;
+.login-div {
+    min-width: 150px;
+    max-width: 280px;
+    margin: 10% auto 0;
 }
 
-.login-div .login-form-title{
-  margin: 10px;
+.login-div .login-form-title {
+    margin: 10px;
+}
+
+.member-index {
+    height: calc(100vh);
 }
