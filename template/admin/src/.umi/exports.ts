@@ -4,8 +4,13 @@
 // @umijs/renderer-*
 export { createBrowserHistory, createHashHistory, createMemoryHistory, createSearchParams, matchPath, matchRoutes, Navigate, NavLink, Outlet, resolvePath, useLocation, useMatch, useNavigate, useOutlet, useOutletContext, useParams, useResolvedPath, useRoutes, useSearchParams, useAppData, useClientLoaderData, useServerLoaderData, renderClient, Link, useRouteData, __useFetcher } from '/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/node_modules/@umijs/renderer-react';
 // umi/client/client/plugin
-export { ApplyPluginsType, PluginManager } from '/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/node_modules/@umijs/max/node_modules/umi/client/client/plugin.js';
+export { ApplyPluginsType, PluginManager } from '/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/node_modules/umi/client/client/plugin.js';
 export { history, createHistory } from './core/history';
 export { terminal } from './core/terminal';
 // plugins
+export { Access, useAccess, useAccessMarkedRoutes } from '/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/src/.umi/plugin-access';
+export { Provider, useModel } from '/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/src/.umi/plugin-model';
+export { useRequest, UseRequestProvider, request } from '/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/src/.umi/plugin-request';
 // plugins types.d.ts
+export * from '/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/src/.umi/plugin-layout/types.d';
+export * from '/home/zk018/work/www/pyapps/github/AppointmentTimeSystem/template/admin/src/.umi/plugin-request/types.d';

@@ -1,10 +1,7 @@
 const users = [
-  { name: 'Umi', nick_name: 'U', gender: 'MALE' },
-  { name: 'Fish', nick_name: 'B', gender: 'FEMALE' },
+  { name: 'Umi', nickName: 'U', gender: 'MALE' },
+  { name: 'Fish', nickName: 'B', gender: 'FEMALE' },
 ];
-
-const user =  { name: 'Umi', nick_name: 'U', gender: 'MALE' }
-
 
 export default {
   'GET /api/v1/queryUserList': (req: any, res: any) => {
@@ -14,12 +11,10 @@ export default {
       errorCode: 0,
     });
   },
-  'POST /api/v1/user/login': (req: any, res: any) => {
+  'PUT /api/v1/user/': (req: any, res: any) => {
     res.json({
       success: true,
       errorCode: 0,
-      data: user
-
     });
   },
 };

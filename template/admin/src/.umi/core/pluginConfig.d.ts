@@ -126,6 +126,7 @@ cssLoader?: {
 }
 copy?: any[]
 chainWebpack?: (() => any)
+cacheDirectoryPath?: string
 autoprefixer?: {
 
 }
@@ -177,6 +178,9 @@ exclude?: {
 
 }[]
 })
+clickToComponent?: {
+editor?: string
+}
 verifyCommit?: {
 scope?: string[]
 allowEmoji?: boolean
