@@ -1,4 +1,4 @@
+import Management from "./Management";
+import ManagementSearchForm from "./ManagementSearchForm";
 
-import Management from './Management';
-
-export default Management;
+export { Management, ManagementSearchForm };

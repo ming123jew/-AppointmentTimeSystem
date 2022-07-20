@@ -2,7 +2,7 @@ import { useState } from "react";
 import logo from "./logo.svg";
 import { useRoutes } from "react-router-dom";
 import { routers } from "./routers/index";
-
+import "antd/dist/antd.css";
 import "./App.css";
 
 // function App() {
